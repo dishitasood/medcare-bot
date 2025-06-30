@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareBot - OTC Medicines</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .bg-accent {
+            background-color: #4CAF50;
+        }
+        .text-accent {
+            color: #4CAF50;
+        }
+        .border-accent {
+            border-color: #4CAF50;
+        }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+    <header class="py-6 px-4 border-b border-accent">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-accent">CareBot</h1>
+            <div class="flex items-center space-x-4">
+                <button class="px-6 py-2 border border-accent rounded-lg hover:bg-accent transition-colors">
+                    Cart <span class="text-accent">(0)</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="container mx-auto py-8 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <!-- Tylenol Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/665646be-cf1b-4c12-9e6f-4dbf44778dec.png" alt="Tylenol Extra Strength bottle with blue and white packaging, 100 count tablets" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Tylenol</h2>
+                    <p class="text-gray-400 mb-4">Extra Strength Pain Reliever</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$5.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advil Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7eba4f97-43ee-46ce-91a0-ad894ec22182.png" alt="Advil Ibuprofen bottle with red and white packaging, 200mg liquid gel capsules" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Advil</h2>
+                    <p class="text-gray-400 mb-4">Pain Reliever/Fever Reducer</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$4.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Claritin Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/10db0c57-99e1-43a1-b2dd-babbb39fca48.png" alt="Claritin allergy medication box with blue and white design, non-drowsy tablets" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Claritin</h2>
+                    <p class="text-gray-400 mb-4">24-Hour Allergy Relief</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$3.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Allegra Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fe897388-bf5c-48cb-98ae-72dc9f1c1a34.png" alt="Allegra antihistamine package with teal and white colors, 180mg tablets" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Allegra</h2>
+                    <p class="text-gray-400 mb-4">24-Hour Allergy Medicine</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$11.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aspirin Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/08b812f3-ce02-47cc-9545-9cf7f04c721c.png" alt="Bayer aspirin bottle with yellow and white theme, safety-coated tablets" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Aspirin</h2>
+                    <p class="text-gray-400 mb-4">Pain Reliever/Thin Blood</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$6.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+<iframe
+    allow="microphone;"
+    width="400"
+    height="630"
+    src="https://console.dialogflow.com/api-client/demo/embedded/006ef5ff-554c-433f-9d36-be82cac7a92f">
+</iframe>
+            <!-- Tums Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/827e0978-6bff-4e6c-8606-ed5f77ba12a3.png" alt="Tums antacid bottle with pink and white label, assorted fruit flavors" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Tums</h2>
+                    <p class="text-gray-400 mb-4">Antacid for Heartburn</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$3.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NyQuil Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://placehold.co/300x200" alt="NyQuil cold & flu medicine bottle with green and white packaging, nighttime formula" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">NyQuil</h2>
+                    <p class="text-gray-400 mb-4">Cold & Flu Nighttime Relief</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$10.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eye Drops Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://placehold.co/300x200" alt="Visine eye drops bottle with red and white design, original redness relief formula" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Eye Drops</h2>
+                    <p class="text-gray-400 mb-4">Redness Relief Formula</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$7.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ibuprofen Card -->
+            <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg transition-all duration-300 card-hover">
+                <div class="h-48 bg-gray-800 flex items-center justify-center">
+                    <img src="https://placehold.co/300x200" alt="Generic Ibuprofen bottle with white and blue label, 200mg tablets" class="max-h-full max-w-full object-contain">
+                </div>
+                <div class="p-4">
+                    <h2 class="text-xl font-semibold mb-2">Ibuprofen</h2>
+                    <p class="text-gray-400 mb-4">Pain Reliever/Fever Reducer</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-2xl font-bold">$8.00</span>
+                        <button class="bg-accent hover:bg-green-600 text-black font-bold py-2 px-4 rounded-lg transition-colors">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-accent py-6 px-4 mt-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-xl font-bold text-accent mb-2">CareBot</h2>
+            <p class="text-gray-400">Your trusted source for OTC medications</p>
+            <div class="mt-4 text-gray-500 text-sm">
+                <p>Disclaimer: These statements have not been evaluated by the FDA. Always read labels and follow package directions.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Add to Cart')) {
+                button.addEventListener('click', function() {
+                    this.textContent = 'Added!';
+                    this.classList.remove('bg-accent', 'hover:bg-green-600');
+                    this.classList.add('bg-gray-600', 'cursor-not-allowed');
+
+                    const cart = document.querySelector('span.text-accent');
+                    const currentCount = parseInt(cart.textContent.match(/\d+/)[0]) || 0;
+                    cart.textContent = `(${currentCount + 1})`;
+
+                    setTimeout(() => {
+                        this.textContent = 'Add to Cart';
+                        this.classList.remove('bg-gray-600', 'cursor-not-allowed');
+                        this.classList.add('bg-accent', 'hover:bg-green-600');
+                    }, 1500);
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
+
